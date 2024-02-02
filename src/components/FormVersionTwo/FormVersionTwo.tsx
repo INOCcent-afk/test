@@ -64,8 +64,6 @@ export const FormVersionTwo = () => {
 	});
 
 	function onSubmit(values: z.infer<typeof formSchema>) {
-		// Form submission successful
-		// Redirect to the next page with congratulatory message containing user's name
 		navigate(`/congrats/${values.firstName} ${values.lastName}`);
 	}
 	return (
@@ -125,7 +123,6 @@ export const FormVersionTwo = () => {
 									{...field}
 								/>
 							</FormControl>
-
 							<FormMessage />
 						</FormItem>
 					)}

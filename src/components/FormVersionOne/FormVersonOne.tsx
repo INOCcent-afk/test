@@ -62,8 +62,6 @@ export const FormVersionOne = () => {
 		e.preventDefault();
 
 		if (validateForm()) {
-			// Form submission successful
-			// Redirect to the next page with congratulatory message containing user's name
 			navigate(`/congrats/${formData.firstName} ${formData.lastName}`);
 		}
 	};
